@@ -27,6 +27,19 @@ export const Container = styled.div<ContainerProps>`
           margin-left: 32px;
         }
 
+        span {
+          position: absolute;
+          width: 73px;
+          height: 2px;
+          left: 1102px;
+          top: 69px;
+          background-color: #fff;
+
+          & + span {
+            margin-left: 32px;
+          }
+        }
+
         &:hover {
           opacity: 0.6;
         }
