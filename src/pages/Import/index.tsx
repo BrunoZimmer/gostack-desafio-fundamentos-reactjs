@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 
@@ -49,7 +50,7 @@ const Import: React.FC = () => {
 
   return (
     <>
-      <Header size="small" />
+      <Header size="small" pageName="Import" />
       <Container>
         <Title>Importar uma transação</Title>
         <ImportFileContainer>

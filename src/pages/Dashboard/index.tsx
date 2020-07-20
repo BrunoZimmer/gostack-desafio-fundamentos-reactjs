@@ -7,6 +7,7 @@ import total from '../../assets/total.svg';
 import api from '../../services/api';
 
 import Header from '../../components/Header';
+// import WindowsFocusHandler from '../../hooks/windowsFocus';
 
 import formatValue from '../../utils/formatValue';
 
@@ -66,7 +67,7 @@ const Dashboard: React.FC = () => {
 
   return (
     <>
-      <Header />
+      <Header pageName="Dashboard" />
       <Container>
         <CardContainer>
           <Card>

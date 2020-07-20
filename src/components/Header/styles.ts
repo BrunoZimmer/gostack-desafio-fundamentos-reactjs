@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 interface ContainerProps {
   size?: 'small' | 'large';
+  pageName: 'Import' | 'Dashboard';
 }
 
 export const Container = styled.div<ContainerProps>`
@@ -22,22 +23,16 @@ export const Container = styled.div<ContainerProps>`
         text-decoration: none;
         font-size: 16px;
         transition: opacity 0.2s;
+        border-bottom: 2px solid
+          ${({ pageName }) =>
+            pageName === 'Dashboard' ? '#ff872c' : '#5636d3'};
+        padding-bottom: 10px;
 
         & + a {
           margin-left: 32px;
-        }
-
-        span {
-          position: absolute;
-          width: 73px;
-          height: 2px;
-          left: 1102px;
-          top: 69px;
-          background-color: #fff;
-
-          & + span {
-            margin-left: 32px;
-          }
+          border-bottom: 2px solid
+            ${({ pageName }) =>
+              pageName === 'Dashboard' ? '#5636d3' : '#ff872c'};
         }
 
         &:hover {
